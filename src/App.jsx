@@ -11,6 +11,13 @@ function App() {
           <a href="#history" className='text-base mx-2 md:mx-6 hover:underline'>01. HISTORY</a>
           <a href="#team" className='text-base mx-2 md:mx-6 hover:underline'>02. TEAM</a>
         </div>
+        <div className='lg:hidden dropdown'>
+          <a href="javascript:void(0)" className='dropbtn text-base mx-2 md:mx-6 hover:underline'>MENU</a>
+          <div class="dropdown-content">
+            <a href="#history" className='text-base mx-2 md:mx-6 hover:underline'>01. HISTORY</a>
+            <a href="#team" className='text-base mx-2 md:mx-6 hover:underline'>02. TEAM</a>
+          </div>
+        </div>
       </header>
       <div className="w-full text-center text-5xl md:text-9xl font-normal mt-32">
         <p className="text-gray-800">
@@ -21,9 +28,9 @@ function App() {
         </p>
       </div>
     </div>
-    <div id="history" className="w-full h-full max-h-max bg-peak bg-no-repeat bg-cover bg-top bg-scroll">
-      <header className="sticky top-0 bg-white w-full h-12 md:h-16 px-4 lg:px-40 flex items-center justify-between text-slate-700">
-        <div className="flex w-max">
+    <div id="history" className="w-full h-full bg-peak bg-no-repeat bg-cover bg-top bg-scroll">
+      <header className="sticky top-0 bg-white w-full h-12 md:h-16 px-4 lg:px-40 flex items-center justify-between text-slate-700 z-10">
+        <div className="flex items-center w-max">
           <div>
             <div className='mx-1 rounded-full border border-slate-700 w-[30px] h-[30px] md:w-[40px] md:h-[40px] bg-Logo bg-no-repeat bg-center bg-cover'></div>
           </div>
@@ -40,6 +47,13 @@ function App() {
           <a href="#history" className='text-base mx-2 md:mx-6 underline hover:no-underline'>01. HISTORY</a>
           <a href="#team" className='text-base mx-2 md:mx-6 underline hover:no-underline'>02. TEAM</a>
         </div>
+        <div className='lg:hidden dropdown'>
+          <a href="javascript:void(0)" className='dropbtn text-base mx-2 md:mx-6 hover:underline'>MENU</a>
+          <div class="dropdown-content">
+            <a href="#history" className='text-base mx-2 md:mx-6 hover:underline'>01. HISTORY</a>
+            <a href="#team" className='text-base mx-2 md:mx-6 hover:underline'>02. TEAM</a>
+          </div>
+        </div>
       </header>
       <div className="px-4 lg:px-40">
         <div className="flex items-center mt-10">
@@ -53,6 +67,7 @@ function App() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ducimus quis eum nihil explicabo doloremque perspiciatis commodi ea rem mollitia, fugiat temporibus illo sint voluptatum veniam atque itaque tempora? Possimus velit libero, commodi ipsam voluptatem corrupti, blanditiis aperiam fuga incidunt inventore consequuntur voluptates rem. Quod totam eos omnis cupiditate et.
         </p>
       </div>
+      <div id="team" className="w-full h-full bg-slate-900/75 mt-40"></div>
     </div>
     </>
   )
