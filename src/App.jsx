@@ -70,7 +70,7 @@ function App() {
         </p>
       </div>
       <div id="team" className="w-full min-h-[600px] bg-slate-900/75 mt-96 pt-10">
-        <div className="w-full max-w-[900px] h-[140px] flex border-white overflow-x-auto snap-x snap-proximity mx-auto">
+        <div className="w-full max-w-[900px] h-[140px] flex border-white overflow-x-auto snap-x snap-proximity mx-auto no-scrollbar">
           <div className="flex-shrink-0 snap-center w-[280px] h-full mx-2 bg-no-repeat bg-cover bg-center bg-carousel-1"></div>
           <div className="flex-shrink-0 snap-center w-[280px] h-full mx-2 bg-no-repeat bg-cover bg-center bg-carousel-2"></div>
           <div className="flex-shrink-0 snap-center w-[280px] h-full mx-2 bg-no-repeat bg-cover bg-center bg-carousel-1"></div>

@@ -29,8 +29,8 @@
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
 
-* {
+.no-scrollbar {
   scrollbar-width: none;
 }
 
-::-webkit-scrollbar { display: none}
+.no-scrollbar::-webkit-scrollbar { display: none}
