@@ -1,8 +1,23 @@
-import {useEffect, useRef} from "react"
+import { useRef, useState} from "react"
 
 function App() {
   const mountain1 = useRef()
   const mountain2 = useRef()
+  const [mountain, setMountain] = useState("mountain-1")
+
+  const toggleMountain = (event) => {
+    let mount1 = mountain1.current, mount2 = mountain2.current;
+    if(mountain === "mountain-1") {
+      mount1.style.display = "none";
+      mount2.style.display = "block";
+      setMountain("mountain-2");
+    }
+    else {
+      mount2.style.display = "none";
+      mount1.style.display = "block";
+      setMountain("mountain-1");
+    }
+  }
 
   return (
     <>
@@ -92,8 +107,8 @@ function App() {
           </p>
         </div>
         <div className="w-full flex h-10 px-4 lg:px-40 text-slate-400/55">
-          <a href="#link" className="p-2 font-bold bg-slate-400/55 text-slate-900/75 w-max h-max hover:underline">MOUNTAIN 1</a>
-          <a href="#link" className="p-2 font-bold hover:bg-slate-400/55 hover:text-slate-900/75 w-max h-max hover:underline">MOUNTAIN 2</a>
+          <a href="#link" onClick={toggleMountain} className="p-2 font-bold hover:bg-slate-400/55 hover:text-slate-900/75 w-max h-max hover:underline">MOUNTAIN 1</a>
+          <a href="#link" onClick={toggleMountain} className="p-2 font-bold hover:bg-slate-400/55 hover:text-slate-900/75 w-max h-max hover:underline">MOUNTAIN 2</a>
         </div>
         <div ref={mountain1} className="w-full h-[400px] bg-last-section-tab-1 bg-no-repeat bg-cover bg-center pt-10 px-4 lg:px-48">
           <div className="w-max min-w-[290px] flex justify-between flex-col bg-white/55 py-2 px-4">
