@@ -11,3 +11,5 @@ Currently, two official plugins are available:
 # How to test
 
 Run `npm install && npm run dev`
+Live preview [here](https://coalition-interview-task.vercel.app/)
+Repository [here](https://github.com/udezueoluomachi/coalition-interview-task)
