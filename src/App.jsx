@@ -163,7 +163,7 @@ function App() {
             </div>
           </div>
         </div>
-        <footer className="sticky top-0 w-full h-12 md:h-16 px-4 lg:px-40 flex items-center justify-between text-slate-700 z-10">
+        <footer className="sticky top-0 w-full h-12 md:h-16 px-4 lg:px-40 flex items-center justify-between flex-col md:flex-row text-slate-700 z-10">
           <a href="#" className="mix-blend-color text-slate-700 flex items-center w-max">
             <div>
               <div className='invert opacity-25 mx-1 rounded-full w-[30px] h-[30px] md:w-[40px] md:h-[40px] bg-Logo bg-no-repeat bg-center bg-cover'></div>
@@ -177,7 +177,7 @@ function App() {
               </p>
             </div>
           </a>
-          <p classname="text-slate-700/55 text-sm">
+          <p classname="mt-2 text-slate-700/55 text-sm">
             COPYRIGHT 2024, ALL RIGHTS RESERVED
           </p>
         </footer>
