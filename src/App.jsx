@@ -177,7 +177,7 @@ function App() {
               </p>
             </div>
           </a>
-          <p classname="text-slate-700/55">
+          <p classname="text-slate-700/55 text-sm">
             COPYRIGHT 2024, ALL RIGHTS RESERVED
           </p>
         </footer>
